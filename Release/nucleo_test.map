@@ -1332,27 +1332,27 @@ LOAD c:/st/stm32cubeide_1.5.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x00000000080005dc                __aeabi_ldiv0
  *(.text*)
  .text.MX_I2C1_Init
-                0x00000000080005e0       0x54 Core/Src/i2c.o
+                0x00000000080005e0       0x58 Core/Src/i2c.o
                 0x00000000080005e0                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x0000000008000634       0x6c Core/Src/i2c.o
-                0x0000000008000634                HAL_I2C_MspInit
+                0x0000000008000638       0x6c Core/Src/i2c.o
+                0x0000000008000638                HAL_I2C_MspInit
  .text.__io_putchar
-                0x00000000080006a0       0x20 Core/Src/main.o
-                0x00000000080006a0                __io_putchar
+                0x00000000080006a4       0x20 Core/Src/main.o
+                0x00000000080006a4                __io_putchar
  .text.SystemClock_Config
-                0x00000000080006c0       0xcc Core/Src/main.o
-                0x00000000080006c0                SystemClock_Config
+                0x00000000080006c4       0xcc Core/Src/main.o
+                0x00000000080006c4                SystemClock_Config
  .text.startup.main
-                0x000000000800078c      0x230 Core/Src/main.o
-                0x000000000800078c                main
+                0x0000000008000790      0x230 Core/Src/main.o
+                0x0000000008000790                main
  .text.Error_Handler
-                0x00000000080009bc        0x4 Core/Src/main.o
-                0x00000000080009bc                Error_Handler
+                0x00000000080009c0        0x4 Core/Src/main.o
+                0x00000000080009c0                Error_Handler
  .text.MPU6050_Init
-                0x00000000080009c0       0x92 Core/Src/mpu6050.o
-                0x00000000080009c0                MPU6050_Init
- *fill*         0x0000000008000a52        0x6 
+                0x00000000080009c4       0x92 Core/Src/mpu6050.o
+                0x00000000080009c4                MPU6050_Init
+ *fill*         0x0000000008000a56        0x2 
  .text.MPU6050_Read_Accel
                 0x0000000008000a58       0x98 Core/Src/mpu6050.o
                 0x0000000008000a58                MPU6050_Read_Accel

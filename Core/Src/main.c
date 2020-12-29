@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include "i2c.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -109,7 +110,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ETH_Init();
+  //MX_ETH_Init();
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_I2C1_Init();
@@ -126,12 +127,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		MPU6050_Read_Accel(&hi2c1, &MPU6050);
-		ax=MPU6050.Ax;
-		ay=MPU6050.Ay;
-		az=MPU6050.Az;
-		printf("x: %.3f   y: %.3f   z: %3f\n",&ax,&ay,&az);
-		HAL_Delay(1000);
+	MPU6050_Read_Accel(&hi2c1, &MPU6050);
+	ax=MPU6050.Ax;
+	ay=MPU6050.Ay;
+	az=MPU6050.Az;
+	printf("x: %.3f   y: %.3f   z: %3f\n",&ax,&ay,&az);
+	HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -248,6 +249,7 @@ static void MX_ETH_Init(void)
   * @param None
   * @retval None
   */
+
 /**
   * @brief USART3 Initialization Function
   * @param None
